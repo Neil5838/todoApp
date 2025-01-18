@@ -1,0 +1,107 @@
+:root {
+    --editBtn: #4635B1;
+    --delBtn: #F93827;
+    --primaryColor: #212121;
+    --supportColor: #FBF5E5;
+    --supportColor2: #F6C794;
+    --supportColor3: #FBFBFB;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(252,252,246,1) 0%, rgba(242,245,128,0.5916491596638656) 100%);
+    color: var(--primaryColor);
+    font-family: "Inter", serif;
+}
+
+#todo-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 8px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#header {
+    text-align: center;
+    box-shadow: 1px 2px 3px var(--primaryColor);
+    padding: 20px 0px;
+    border-radius: 4px;
+}
+
+#header h1 {
+    margin-bottom: 6px;
+    font-size: 2.125rem;
+}
+
+#input-container {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#task-lists {
+    margin-top: 15px;
+}
+
+#input-box {
+    width: 100%;
+    padding: 12px;
+}
+
+#addBtn {
+    padding: 12px;
+    font-weight: 600;
+    background-color: var(--primaryColor);
+    color: var(--supportColor);
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    opacity: 0.9;
+}
+
+#counter-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--supportColor);
+    padding: 10px;
+    font-size: 0.85rem;
+}
+
+#task-list {
+    text-align: left;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+#task-list li {
+    border: 1px solid var(--supportColor2);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+#edit-btn, #del-btn {
+    float: right;
+    margin-left: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#edit-btn {
+    color: var(--editBtn);
+}
+
+#del-btn {
+    color: var(--delBtn);
+}
