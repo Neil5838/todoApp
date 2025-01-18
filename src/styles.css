@@ -85,7 +85,7 @@ body {
 }
 
 #task-list li {
-    border: 1px solid var(--supportColor2);
+    border: 2px solid var(--supportColor2);
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 2px;
@@ -104,4 +104,16 @@ body {
 
 #del-btn {
     color: var(--delBtn);
+}
+
+.completed {
+    border: 2px solid gray !important;
+    color: gray;
+    text-decoration: line-through;
+}
+
+#msg {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--primaryColor)
 }
