@@ -11,21 +11,28 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Todo list App</h1>
-        <div class="form-container">
-            <input id="input-element" type="text" placeholder="Write your sh*t running in ur head...">
-            <button class="add-task-btn" onclick="addTask()">Add task</button>
-        </div>
-        <h4 style="color: gray;">Your todo lists</h4>
-        <ul id="list-container">
+    <main>
+        <section class="todo-container">
+            <header>
+                <h1>Todo list App</h1>
+            </header>
+            <div class="form-container">
+                <input id="input-element" type="text" placeholder="Write your sh*t running in ur head...">
+                <button class="add-task-btn" onclick="addTask()">Add task</button>
+            </div>
+            <h4 style="color: gray; padding: 1.25em 0;">Your todo lists</h4>
+            <ul id="list-container">
 
-        </ul>
-        <div class="counter">
-            <hr>
-            <span>Completed: <span id="completed"></span> | Uncompleted: <span id="uncompleted">0</span></span>
-        </div>
-    </div>
+            </ul>
+            <div class="counter">
+                <hr>
+                <span style="margin-top: 0.55rem; display: inline-block;">Completed: <span id="completed"></span> |
+                    Uncompleted: <span id="uncompleted">0</span></span>
+            </div>
+        </section>
+    </main>
+
+
 
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

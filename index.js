@@ -35,7 +35,7 @@ function createElementTask(taskText, isCompleted = false) {
             <input type="checkbox" ${isCompleted ? "checked" : ""}>
             <span class="task">${taskText}</span>
         </span>
-        <span>
+        <span class="action-btns">
             <button class="edit-btn">Edit</button>
             <button class="del-btn">Delete</button>
         </span>
