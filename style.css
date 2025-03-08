@@ -41,12 +41,6 @@ header h1 {
     background-color: #00000058;
 }
 
-@media (max-width: 450px) {
-    .todo-container {
-        padding: 1em;
-    }
-}
-
 .form-container {
     display: flex;
     align-items: center;
@@ -85,10 +79,6 @@ li {
     margin-bottom: 0.75em;
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
 .edit-btn, .del-btn {
@@ -96,6 +86,7 @@ li {
     cursor: pointer;
     font-size: small;
     padding: 0 4px;
+    text-decoration: none;
 }
 
 
@@ -108,14 +99,23 @@ li {
     color: white;
 }
 
+.action-btns {
+    float: right;
+}
+
 .counter {
     color: gray;
     font-size: small;
 
 }
 
-
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+@media (max-width: 450px) {
+    .todo-container {
+        padding: 1em;
+    }
 }
