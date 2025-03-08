@@ -32,13 +32,19 @@ header h1 {
 
 .todo-container {
     max-width: 465px;
-    width: 90%;
+    width: 92%;
     margin: auto;
     padding: 0.65em 2em;
     border-radius: 8px;
 
     text-align: center;
     background-color: #00000058;
+}
+
+@media (max-width: 450px) {
+    .todo-container {
+        padding: 1em;
+    }
 }
 
 .form-container {
@@ -86,7 +92,7 @@ li {
 }
 
 .edit-btn, .del-btn {
-    margin-left: 12px;
+    margin-left: 4px;
     cursor: pointer;
     font-size: small;
     padding: 0 4px;
